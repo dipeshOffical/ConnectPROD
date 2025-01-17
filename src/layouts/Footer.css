@@ -1,0 +1,26 @@
+/* Footer.css */
+.social-icon {
+    color: #FFFFFF; /* Default color, change as needed */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.social-icon:hover {
+    color: #ff0000; /* Gold color on hover */
+}
+
+.icon-hover {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.icon-hover:hover {
+    color: #ff0000; /* Gold color on hover */
+}
+
+.footer-item-link, .footer-item-title {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    color: #e3e6eb; /* Default color */
+}
+
+.footer-item-link:hover, .footer-item-title:hover {
+    color: #ff0000; /* Red color on hover */
+}

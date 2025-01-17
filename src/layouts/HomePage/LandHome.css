@@ -1,0 +1,251 @@
+/* Pop-up animation for text */
+.popup-text {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popup 0.6s ease-out forwards;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Button animation with hover-up effect */
+.animated-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff0000; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.4s ease, width 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 180px; /* Initial width */
+    margin-top: 20px; /* Space below the text */
+}
+
+.animated-button:hover {
+    transform: translateY(-10px); /* Move the button up on hover */
+    width: 240px; /* Expanded width on hover */
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+.animated-button .arrow-icon {
+    opacity: 0;
+    margin-left: 10px;
+    transition: opacity 0.4s ease;
+}
+
+.animated-button:hover .arrow-icon {
+    opacity: 1;
+}
+
+/* Arrow icon styling */
+.arrow-icon::before {
+    content: '→';
+    font-size: 1.2rem;
+}
+/* Button animation with hover-up effect */
+.animated-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff0000; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.4s ease, width 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 180px; /* Initial width */
+    margin-top: 20px; /* Space below the text */
+}
+
+.animated-button:hover {
+    transform: translateY(-10px); /* Move the button up on hover */
+    width: 240px; /* Expanded width on hover */
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+.animated-button .arrow-icon {
+    opacity: 0;
+    margin-left: 10px;
+    transition: opacity 0.4s ease;
+}
+
+.animated-button:hover .arrow-icon {
+    opacity: 1;
+}
+
+/* Arrow icon styling */
+.arrow-icon::before {
+    content: '→';
+    font-size: 1.2rem;
+}
+/* Button animation with hover-up effect */
+.animated-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff0000; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.4s ease, width 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 210px; /* Initial width */
+}
+
+.animated-button:hover {
+    transform: translateY(-10px); /* Move the button up on hover */
+    width: 240px; /* Expanded width on hover */
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+.animated-button .arrow-icon {
+    opacity: 0;
+    margin-left: 10px;
+    transition: opacity 0.4s ease;
+}
+
+.animated-button:hover .arrow-icon {
+    opacity: 1;
+}
+
+/* Arrow icon styling */
+.arrow-icon::before {
+    content: '→';
+    font-size: 1.2rem;
+}
+/* Base styles for the objective items */
+.objective-item {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.objective-item:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Darken background */
+    transform: scale(1.05); /* Scale up */
+}
+
+/* Icon container to ensure the icon scales properly */
+.icon-container {
+    transition: transform 0.3s ease;
+}
+
+.objective-item:hover .icon-container {
+    transform: scale(1.1); /* Scale up icon */
+}
+
+/* Styling for the icons with a transition for the filter */
+.objective-icon {
+    transition: filter 0.3s ease;
+    filter: brightness(0) invert(0.9); /* Initial filter to make icons nearly white */
+}
+
+/* Change icon color to bright gold on hover */
+.objective-item:hover .objective-icon {
+    filter: brightness(0) saturate(100%) invert(67%) sepia(100%) hue-rotate(-15deg) brightness(100%) contrast(105%);
+}
+
+/* Glowing border effect on hover */
+.objective-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    pointer-events: none; /* Prevents hover effects on the border itself */
+}
+
+.objective-item:hover::after {
+    border-color: rgba(255, 215, 0, 0.75); /* Gold glowing border */
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.75);
+}
+.pop-up-text {
+    opacity: 0;
+    transform: translateY(50px); /* Start the text slightly below */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+}
+
+.animate-pop-up {
+    opacity: 1;
+    transform: translateY(0); /* Move the text to its normal position */
+}
+/* Button animation with hover-up effect and slide-in */
+.animated-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff0000; /* Initial red button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slide-in 0.5s ease-out forwards; /* Slide-in animation */
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animated-button:hover {
+    background-color: #0000ff; /* Change to blue on hover */
+}
+
+.animated-button .arrow-icon {
+    opacity: 0;
+    margin-left: 10px;
+    transition: opacity 0.4s ease;
+}
+
+.animated-button:hover .arrow-icon {
+    opacity: 1;
+}
+
+/* Arrow icon styling */
+.arrow-icon::before {
+    content: '→';
+    font-size: 1.2rem;
+}

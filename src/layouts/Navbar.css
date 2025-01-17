@@ -1,0 +1,32 @@
+/* Existing navigation styles */
+
+.nav-item {
+  position: relative;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and scale */
+  z-index: 1;
+  overflow: hidden; /* Ensures the background doesn't overflow the item */
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000; /* Red background for the animation */
+  z-index: -1;
+  transform: scaleY(0); /* Initially, the background is hidden */
+  transform-origin: top; /* Animation starts from the top */
+  transition: transform 0.3s ease; /* Smooth transition for the background */
+}
+
+.nav-item:hover::before {
+  transform: scaleY(1); /* Expands the background from top to bottom */
+}
+
+.nav-item:hover {
+  color: #ffffff; /* White text on hover for better contrast */
+  transform: scale(1.05); /* Slightly enlarges the item on hover */
+}

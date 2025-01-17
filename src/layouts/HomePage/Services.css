@@ -1,0 +1,121 @@
+/* Service card container */
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Service image background */
+.service-image {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.service-card:hover .service-image {
+  filter: brightness(0.7); /* Darken the image on hover */
+}
+
+/* Overlay always visible at the bottom */
+.service-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(5, 5, 151, 0.288); /* Blue semi-transparent overlay */
+  padding: 20px;
+  color: white;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 1;
+  height: 50px;
+  text-align: center;
+}
+
+/* Title initially visible at the bottom */
+.service-title {
+  font-size: 1.rem;
+  font-weight: bold;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+/* Description hidden initially */
+.service-desc {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* "Read More" link hidden initially */
+.read-more {
+  color: white;
+  text-decoration: underline;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  font-size: 0.875rem;
+}
+
+/* Hover effect */
+.service-card:hover .service-overlay {
+  background-color: rgba(0, 0, 255, 0.9); /* Darker blue on hover */
+  height: 100%; /* Expand overlay to full height */
+  justify-content: center; /* Center the content when fully expanded */
+}
+
+.service-card:hover .service-title {
+  transform: translateY(-20px); /* Move title up */
+}
+
+.service-card:hover .service-desc {
+  opacity: 1;
+  max-height: 200px; /* Reveal description */
+}
+
+.service-card:hover .read-more {
+  opacity: 1; /* Show "Read More" link */
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.05); /* Slight zoom on image hover */
+}
+@keyframes slideInLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-in-out;
+}

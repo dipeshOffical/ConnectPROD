@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+.home-bg {
+  background-image: url("./assets/homebg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.objective-bg,
+.header-theme-bg {
+  background-image: url("./assets/australia.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-back-logo {
+  background-image: url("./assets/back-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-color-white {
+  color: #ffffff;
+}
+
+.text-color-black {
+  color: #0C1026;
+
+}
+
+.text-color-main {
+  color: #141E6B;
+}
+
+.btn-color {
+  background-color: #D10107;
+}
+
+.bg-color {
+  background-color: #141E6B;
+}
+
+.light-bg {
+  background-color: #F2F4FF;
+}
+
+.nav-color {
+  color: #0C1026;
+}
+
+.obj-list {
+  list-style-type: disc;
+}
+
+::placeholder {
+  font-size: small;
+}
+
+textarea {
+  resize: none;
+}
+
+.ant-select-selector {
+  border-radius: 0 !important;
+}
+
+input[type="radio"] {
+  transform: scale(2);
+  /* Increase size */
+  -webkit-transform: scale(2);
+  /* For Safari */
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+.back {
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+}

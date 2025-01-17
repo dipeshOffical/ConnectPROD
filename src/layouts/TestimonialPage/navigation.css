@@ -1,0 +1,12 @@
+/* Existing navigation styles */
+
+.nav-item {
+    /* ... other styles ... */
+    transition: background-color 0.3s ease; /* Add smooth transition */
+  }
+  
+  .nav-item:hover {
+    background-color: #ff0000; /* Red background on hover */
+    color: #ffffff; /* White text on hover for better contrast */
+  }
+  
