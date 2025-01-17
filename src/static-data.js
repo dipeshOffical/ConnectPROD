@@ -507,21 +507,21 @@ export const reviews = [
     image: reviewer,
     location: "Charles Darwin University , Australia",
     review:
-      "Choosing Connect Consultancy was the best decision for my study abroad journey. Their personalized guidance helped me secure admission to my dream university in Australia. The team was always available to answer my questions and made the entire process smooth and stress-free. I couldn't have done it without them",
+      "I am so grateful to Connect Consultancy for their unwavering support throughout my study abroad journey. From choosing the right university to assisting with the visa process, they made everything seamless. Their dedication and personalized service made all the difference, and I’m now studying in Australia, thanks to their guidance!",
   },
   {
     name: "Savannah Nguyen",
     image: s3,
     location: "ECA - Victoria University , Australia",
     review:
-      "Choosing Connect Consultancy was the best decision for my study abroad journey. Their personalized guidance helped me secure admission to my dream university in Australia. The team was always available to answer my questions and made the entire process smooth and stress-free. I couldn't have done it without them",
+      "Connect Consultancy was a game-changer for my study abroad plans. Their team provided exceptional support and tailored advice that helped me get accepted into my top-choice university in Australia. They were always responsive, kept me updated throughout the process, and ensured everything was in place for a smooth transition. I couldn’t have asked for a better experience!",
   },
   {
     name: "Valentina",
     image: s4,
     location: "Charles Sturt University",
     review:
-      "Choosing Connect Consultancy was the best decision for my study abroad journey. Their personalized guidance helped me secure admission to my dream university in Australia. The team was always available to answer my questions and made the entire process smooth and stress-free. I couldn't have done it without them",
+      "Thanks to Connect Consultancy, my dream of studying abroad became a reality. They provided thorough, personalized guidance every step of the way, from university selection to visa approval. Their professionalism and commitment to helping me succeed made the entire experience stress-free and enjoyable!",
   },
 ];
 

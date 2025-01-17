@@ -13,7 +13,7 @@ const Contact = () => {
     });
 
     const [formErrors, setFormErrors] = useState({});
-    const [formStatus, setFormStatus] = useState("");
+    // const [formStatus, setFormStatus] = useState("");
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -43,7 +43,7 @@ const Contact = () => {
             setFormErrors({});
             setTimeout(() => {
                 console.log("Form submitted:", formData);
-                setFormStatus("Thank you for contacting us. We will get back to you soon!");
+                // setFormStatus("Thank you for contacting us. We will get back to you soon!");
                 setFormData({ fname: "", lname: "", email: "", phone: "", office: "", message: "" });
             }, 1000);
         }
@@ -159,7 +159,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </form>
-                    {formStatus && <p className="mt-4 text-green-600">{formStatus}</p>}
+                    {/* {formStatus && <p className="mt-4 text-green-600">{formStatus}</p>} */}
                 </div>
             </div>
         </Wrapper>
