@@ -14,6 +14,7 @@ import { Route, Routes, useLocation } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 import BranchContact from "./components/BranchContact";
 import AboutTraining from "./components/AboutTraining";
+import BranchContactNepal from "./components/BranchContactNepal";
 
 const App = () => {
   const location = useLocation();
@@ -36,7 +37,7 @@ const App = () => {
           <Route path="/testimonial" element={<TestimonialPage />}></Route>
           <Route path="/contact" element={<ContactPage />}>
             <Route path="australia" element={<BranchContact />} />
-            <Route path="nepal" element={<BranchContact />} />
+            <Route path="nepal" element={<BranchContactNepal />} />
           </Route>
           <Route path="/service" element={<StudentServicePage />}></Route>
           <Route path="/ielts" element={<IeltsTrainingPage />}>

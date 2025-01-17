@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import s1 from "../../assets/s1.jpg";
 import s2 from "../../assets/s2.jpg";
 import s3 from "../../assets/s3.jpg";
@@ -22,7 +22,7 @@ const StartJourney = () => {
                         <div className="text-sm"><span>13+ Have already Enroll</span></div>
                     </div>
                 </div>
-                <div className="mt-6"><Link to="/ielts"><button type="button" className="bg-white text-color-main px-6 py-2">Start Your Journey</button></Link></div>
+                {/* <div className="mt-6"><Link to="/ielts"><button type="button" className="bg-white text-color-main px-6 py-2">Start Your Journey</button></Link></div> */}
             </Wrapper>
         </div>
     );

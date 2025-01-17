@@ -12,7 +12,7 @@ const OtherBranch = () => {
                 <div className="lg:w-[30%] rounded-tr-2xl rounded-tl-2xl lg:absolute">
                     {branches.map((page, index) => {
                         return (
-                            <NavLink to={page.link}>
+                            <NavLink to={page.link} key={index}>
                                 {({ isActive }) => {
                                     return (
                                         <FlexButton title={page.title} isActive={isActive} index={index}></FlexButton>
