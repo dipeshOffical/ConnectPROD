@@ -517,7 +517,7 @@ export const reviews = [
       "Choosing Connect Consultancy was the best decision for my study abroad journey. Their personalized guidance helped me secure admission to my dream university in Australia. The team was always available to answer my questions and made the entire process smooth and stress-free. I couldn't have done it without them",
   },
   {
-    name: "Sujina Khatri",
+    name: "Valentina",
     image: s4,
     location: "Charles Sturt University",
     review:
