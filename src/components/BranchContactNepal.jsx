@@ -15,9 +15,9 @@ const BranchContactNepal = () => {
         },
         {
             title: "Nepal Office (Kathmandu)",
-            phone: "015913188 / 9851221186",
+            phone: "9801313378 / 9801316378",
             email: "ktm@connectforstudy.com.au",
-            address: "Balaju-16 (4th floor of Nabil Bank), Machhapokhari, Kathmandu, Nepal",
+            address: "Putali Sadak, Kathmandu, Nepal",
         },
         {
             title: "Nepal Office (Butwal)",
@@ -30,12 +30,6 @@ const BranchContactNepal = () => {
             phone: "+977 9856032493",
             email: "dulegaunda@connectforstudy.com.au",
             address: "Dulegaunda Bazar, Tanahun, Nepal",
-        },
-        {
-            title: "Nepal Office (Tandi)",
-            phone: "056-560790",
-            email: "tandi@connectforstudy.com.au",
-            address: "Ratnanagar-2, Chitwan, Nepal",
         },
         {
             title: "Nepal Office (Damauli)",
